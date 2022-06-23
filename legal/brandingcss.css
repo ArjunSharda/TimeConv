@@ -8,6 +8,10 @@ html, body {
   margin: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
 p {
   text-align: center;
   font-family: 'Cookie', cursive;
@@ -20,10 +24,10 @@ img {
   margin: auto;
   display: block;
 }
-h8 {
-  text-align: right;
-}
 
+h8 {
+  text-align: left;
+}
 
 button {
   text-align: center;
@@ -32,7 +36,7 @@ button {
   color: white;
   background: green;
   outline: 0;
-  margin-left: 35px;
+  margin-left: 40px;
   align-items: center;
   border-radius: 100%;
   border: none;
@@ -61,4 +65,3 @@ footer {
   width: 100%;
   bottom: 0;
   
-}  
