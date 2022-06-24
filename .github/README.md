@@ -4,7 +4,6 @@
 </br>
 [![License](https://img.shields.io/github/license/ArjunSharda/TimeConv)](https://github.com/ArjunSharda/TimeConv/blob/main/LICENSE)
 [![Deployment State](https://img.shields.io/github/deployments/ArjunSharda/TimeConv/github-pages)](https://github.com/ArjunSharda/TimeConv/deployments/activity_log?environment=github-pages)
-[![Top Language](https://img.shields.io/github/languages/top/ArjunSharda/TimeConv)](https://github.com/ArjunSharda/TimeConv)
 [![Pull Requests open](https://img.shields.io/github/issues-pr-raw/ArjunSharda/TimeConv)](https://github.com/ArjunSharda/TimeConv/pulls)
 [![Pull Requests closed](https://img.shields.io/github/issues-pr-closed/ArjunSharda/TimeConv)](https://github.com/ArjunSharda/TimeConv/pulls)
 <br>
