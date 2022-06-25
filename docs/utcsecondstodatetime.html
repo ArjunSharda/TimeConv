@@ -58,13 +58,9 @@
             var x2, y2;
             x2 = document.getElementById("utcsecondstodatetime");
             y2 = x2.elements["name"].value;
-            if (y2 == null) {
-              document.getElementById("utcsecondstodatetime").innerHTML = "Invalid Date";
-            }
-            else {
-              const dateutdt2 = new Date(y2*1000);
-              document.getElementById("utcsecondstodatetime").innerHTML = dateutdt2.toLocaleString();
-            }
+            document.getElementById("utcsecondstodatetime").innerHTML = "Invalid Date";
+            const dateutdt2 = new Date(y2*1000);
+            document.getElementById("utcsecondstodatetime").innerHTML = dateutdt2.toLocaleString();
           }   
         </script> 
         <footer>
