@@ -28,7 +28,8 @@ button {
   left: 30%;
   bottom: 10%;
   text-align: center;
-  color: ghostwhite;
+  color: white;
+  background: green;
   box-sizing: border-box;
   border-radius: 4px;
   outline: none;
