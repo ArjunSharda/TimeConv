@@ -14,4 +14,4 @@ updates:
     labels:
       - "Dependabot"
       - "enhancement"
-      - "Minor Priority"
+      - "Priority: Minor"
