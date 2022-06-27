@@ -7,6 +7,11 @@ html, body {
   padding: 0;
   margin: 0;
 }
+
+.text-center {
+  text-align: center;
+}
+
 p {
   text-align: center;
 }
