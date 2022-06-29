@@ -1,1 +1,2 @@
 docs/** -linguist-documentation
+*.css linguist-language=CSS
