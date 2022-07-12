@@ -18,6 +18,12 @@ h1 {
   text-align: center;
 }
 
+span.new {
+  collor: white;
+  background-color: yellow;
+  border-radius: 25px;
+  border: none;
+
 footer {
   color: ghostwhite;
   right: 0%;
