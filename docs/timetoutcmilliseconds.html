@@ -42,6 +42,7 @@
         <head>
           <title>Converter: Time to UTC milliseconds/title>
         </head>
+        <h1>Enter the time in the box below (example: 7/12/2022 2:00 PM PST)
         <form id="timetoutcmilliseconds">
           Enter seconds (example: 1655864817):
           <input name="name" type="text" size="30"> 
@@ -51,10 +52,10 @@
         <script>
           function timetoutcmilliseconds() {
             var x2, y2;
-            x2 = document.getElementById("utcsecondstodatetime");
+            x2 = document.getElementById("timetoutcmilliseconds");
             y2 = x2.elements["name"].value;
             const dateutdt2 = new Date();
-            document.getElementById("utcsecondstodatetime").innerHTML = dateutdt2.valueOf();
+            document.getElementById("timetoutcmilliseconds").innerHTML = dateutdt2.valueOf();
           }   
         </script> 
         <footer>
