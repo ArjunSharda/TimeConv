@@ -1,0 +1,72 @@
+<html>
+  <html lang="en-US">
+    <head>
+      <title>TimeConv - Time to UTC Milliseconds Converter</title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+    </head>
+    <body>
+      <link rel="stylesheet" href="ttums.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+      <body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="time_conversion_links.html">Time Conversion Links</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="credits.html">Credits</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="legal/branding.html">Branding</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container-fluid p-5 bg-primary text-white text-center">
+          <h1>TimeConv - UTC seconds to date time</h1>
+        </div>
+        <div class="container mt-5">
+        <div class="row">
+        <div class="container MT-5">
+        <div class="row">
+        <head>
+          <title>Converter: Time to UTC milliseconds/title>
+        </head>
+        <form id="timetoutcmilliseconds">
+          Enter seconds (example: 1655864817):
+          <input name="name" type="text" size="30"> 
+          <button onclick="timetoutcmilliseconds()">Submit</button> 
+        </form>
+        <h1></h1>
+        <script>
+          function timetoutcmilliseconds() {
+            var x2, y2;
+            x2 = document.getElementById("utcsecondstodatetime");
+            y2 = x2.elements["name"].value;
+            const dateutdt2 = new Date();
+            document.getElementById("utcsecondstodatetime").innerHTML = dateutdt2.valueOf();
+          }   
+        </script> 
+        <footer>
+          <h2>Project Information</h2>
+          <a href="https://github.com/ArjunSharda/TimeConv/" target="_blank">
+            <ion-icon name="logo-github" size="large"></ion-icon>
+          </a>
+          <a href="https://discord.gg/qWezfjAq6h" target="_blank">
+            <ion-icon name="logo-discord" size="large"></ion-icon>
+          </a>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+    </body>
+  </html>
