@@ -31,8 +31,8 @@ button {
   color: white;
   background: green;
   box-sizing: border-box;
-  border-radius: 4px;
-  outline: none;
+  border-radius: 25px;
+  border: none;
   font-size: 2rem;
 }
 h2 {
