@@ -8,7 +8,7 @@
 [![Pull Requests closed](https://img.shields.io/github/issues-pr-closed/ArjunSharda/TimeConv)](https://github.com/ArjunSharda/TimeConv/pulls)
 <br>
 </br>
-TimeConv is a HTML & CSS website that can convert local datetime to a different timezone in different countries, it can convert datetime (different timezones allowed) to UTC, and even UTC seconds to datetime.
+TimeConv is a HTML & CSS time conversion website that can convert local datetime to a different timezone in different countries, it can convert datetime (different timezones allowed) to UTC, and even UTC seconds to datetime.
 Timeconv is open sourced under the MIT license and is free for everyone to use under the conditions of the MIT license.
 
 TimeConv is made by @ArjunSharda and you can use it at https://arjunsharda.github.io/TimeConv/.
