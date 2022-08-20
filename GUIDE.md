@@ -2,7 +2,7 @@
 
 These will provide step-by-step instructions on how to use TimeConv.
 
-1. Clone TimeConv via git in your terminal using `git clone https://github.com/ArjunSharda/TimeConv.git'.
+1. Clone TimeConv via git in your terminal using the command `git clone https://github.com/ArjunSharda/TimeConv.git`.
 2. Delete all the directories EXCEPT the `docs` directory.
 3. Move all the files and directories in the `docs` directory to the root directory.
 4. Delete the `docs` directory.
