@@ -1,0 +1,16 @@
+name: TimeConv Welcomer
+
+on: [pull_request_target, issues]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+    - uses: actions/first-interaction@v1
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        issue-message: "👋 Hey! Thanks for Contributing to TimeConv by raising this issue. \n \n # What will happen next? \n We will review your issue (collaborators and mantainer) and either close it or comment on it for a followup. \n \n ❓ Any questions? \n Don't hesitate to ask in this issue! \n \n Thanks, \n TimeConv Founders"
+        pr-message: "👋 Hey! Thanks for Contributing to TimeConv by creating this pull request. \n \n # What will happen next? \n We will review your pull request (collaborators and mantainer) and either close your Pull Request, request changes, or approve/merge your pull request. \n \n ❓ Any questions? \n Don't hesitate to ask in this pull request! \n \n Thanks, \n TimeConv Founders"
