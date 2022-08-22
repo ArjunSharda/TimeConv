@@ -1,5 +1,0 @@
-enabled: true
-pull_requests: true
-request_review: owner
-labels:
-  - Minor Priority
