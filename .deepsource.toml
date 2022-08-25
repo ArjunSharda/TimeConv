@@ -1,5 +1,5 @@
 version = 1
 
 [[analyzers]]
-name = "test-coverage"
+name = "javascript"
 enabled = true
