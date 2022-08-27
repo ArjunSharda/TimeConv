@@ -5,7 +5,19 @@
 
 version: 2
 updates:
+
   - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    reviewers:
+      - "ArjunSharda"
+    labels:
+      - "Dependabot"
+      - "enhancement"
+      - "Priority: Minor"
+      
+  - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
