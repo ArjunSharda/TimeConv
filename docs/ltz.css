@@ -51,6 +51,7 @@ ion-icon {
 footer {
   color: ghostwhite;
   right: 0%;
+  position: absolute;
   text-align: center;
   background-color: #666666;
   font-family: 'Yellowtail', cursive;
