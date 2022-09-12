@@ -1,11 +1,12 @@
-html, body {
+/* html, body {
   height: 100%;
   width: 100%;
-}
+} */
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 p {
   text-align: center;
@@ -20,20 +21,21 @@ h1 {
 input {
   height: 5vh;
   box-sizing: border-box;
-  border_radius: 4px;
+  border-radius: 4px;
 }
-button {
-  height: 5vh;
-  width: 10%;
-  left: 30%;
-  bottom: 10%;
+button.submit_btn {
+  /* height: 5vh; */
+  /* width: 10%; */
+  /* left: 30%;
+  bottom: 10%; */
   text-align: center;
   color: white;
   background: green;
   box-sizing: border-box;
-  border-radius: 25px;
+  border-radius: 12px;
   border: none;
-  font-size: 2rem;
+  padding: 3px 10px;
+  /* font-size: 2rem; */
 }
 h2 {
   text-align: center;
@@ -60,4 +62,26 @@ footer {
   width: 100%;
   bottom: 0;
   
+}
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 325px) {
+  h1 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  span {
+    font-size: 14px;
+  }
 }

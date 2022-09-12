@@ -1,11 +1,12 @@
-html, body {
+/* html, body {
   height: 100%;
   width: 100%;
-}
+} */
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 p {
   text-align: center;
@@ -20,20 +21,22 @@ h1 {
 input {
   height: 5vh;
   box-sizing: border-box;
-  border_radius: 4px;
+  border-radius: 4px;
 }
-button {
-  height: 5vh;
+button.submit_btn {
+  /* height: 5vh;
   width: 10%;
   left: 30%;
-  bottom: 10%;
+  bottom: 10%; */
   text-align: center;
   color: white;
   background: green;
   box-sizing: border-box;
-  border-radius: 25px;
+  border-radius: 12px;
   border: none;
-  font-size: 2rem;
+  padding: 3px 10px;
+  margin-top: 5px;
+  /* font-size: 2rem; */
 }
 h2 {
   text-align: center;
@@ -50,16 +53,31 @@ ion-icon {
 
 footer {
   color: ghostwhite;
-  right: 0%;
-  position: absolute;
+  /* right: 0%;
+  position: absolute; */
   text-align: center;
   background-color: #666666;
   font-family: 'Yellowtail', cursive;
   box-sizing: border-box;
   height: 15vh;
   width: 100%;
-  bottom: 0;
+  /* bottom: 0; */
   
 }
 
-
+/* Mobile Responsivness */
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 325px) {
+  h1 {
+    font-size: 13px;
+  }
+}
