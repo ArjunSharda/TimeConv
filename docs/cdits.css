@@ -41,3 +41,21 @@ footer {
   bottom: 0;
   
 } 
+
+/* Mobile Responsivness */
+
+@media screen and (max-width: 540px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 380px) {
+  h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 325px) {
+  h2 {
+    font-size: 17px;
+  }
+}
