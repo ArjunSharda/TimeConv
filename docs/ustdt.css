@@ -8,6 +8,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 p {
   text-align: center;
 }
@@ -18,17 +19,37 @@ h1 {
   font-family: 'Asap Condensed', sans-serif;
   text-align: center
 }
-input {
-  height: 5vh;
-  box-sizing: border-box;
-  border-radius: 4px;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+form input {
+  margin-top: 10px;
+  width: 30%;
+  height: 40px;
+  border-radius: 4px;
+  background-color: rgb(243, 238, 238);
+  border: 0px;
+}
+
+form input:focus {
+  outline: none;
+  border-top: 0px;
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 5px solid blue;
+}
+
+form input::placeholder{
+  padding-left: 20px;
+}
+
 button.submit_btn {
-  /* height: 5vh;
-  width: 10%;
-  left: 30%;
-  bottom: 10%; */
   text-align: center;
+  width: 90px;
+  height: 40px;
   color: white;
   background: green;
   box-sizing: border-box;
@@ -36,8 +57,13 @@ button.submit_btn {
   border: none;
   padding: 3px 10px;
   margin-top: 5px;
-  /* font-size: 2rem; */
+  margin-bottom: 10px;
 }
+
+button.submit_btn:hover {
+  background: rgb(28, 168, 28);
+}
+
 h2 {
   text-align: center;
 }
@@ -50,34 +76,31 @@ ion-icon {
   font-size: 64px;
   color: white;
 }
-
-footer {
-  color: ghostwhite;
-  /* right: 0%;
-  position: absolute; */
-  text-align: center;
-  background-color: #666666;
-  font-family: 'Yellowtail', cursive;
-  box-sizing: border-box;
-  height: 15vh;
-  width: 100%;
-  /* bottom: 0; */
-  
+.text_utc {
+  font-size: 22px;
+  padding: 20px;
+  margin-bottom: 5px;
 }
 
-/* Mobile Responsivness */
-@media screen and (max-width: 540px) {
+
+
+/* Mobile Responsiveness */
+
+@media screen and (max-width: 576px) {
   h1 {
-    font-size: 19px;
+    font-size: 22px;
   }
-}
-@media screen and (max-width: 380px) {
-  h1 {
-    font-size: 16px;
+
+  form input {
+    margin-top: 10px;
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
   }
-}
-@media screen and (max-width: 325px) {
-  h1 {
-    font-size: 13px;
+
+  .text_utc {
+    font-size: 18px;
+    padding: 20px;
+    margin-bottom: 5px;
   }
 }
