@@ -39,27 +39,3 @@ ion-icon {
   font-size: 64px;
   color: white;
 }
-
-/* Mobile Responsivness */
-
-@media screen and (max-width: 540px) {
-  .date_text {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 380px) {
-  h1 {
-    font-size: 24px;
-  }
-  .date_text {
-    font-size: 11px;
-  }
-}
-@media screen and (max-width: 325px) {
-  h1 {
-    font-size: 19px;
-  }
-  .date_text {
-    font-size: 10px;
-  }
-}
