@@ -1,12 +1,16 @@
-/* html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-} */
+}
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+}
+
+.text-center {
+  text-align: center;
 }
 
 p {
@@ -16,91 +20,46 @@ div {
   text-align: center;
 }
 h1 {
-  font-family: 'Asap Condensed', sans-serif;
-  text-align: center
-}
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-form input {
-  margin-top: 10px;
-  width: 30%;
-  height: 40px;
-  border-radius: 4px;
-  background-color: rgb(243, 238, 238);
-  border: 0px;
-}
-
-form input:focus {
-  outline: none;
-  border-top: 0px;
-  border-right: 0px;
-  border-bottom: 0px;
-  border-left: 5px solid blue;
-}
-
-form input::placeholder{
-  padding-left: 20px;
-}
-
-button.submit_btn {
+  font-family: "Asap Condensed", sans-serif;
   text-align: center;
-  width: 90px;
-  height: 40px;
-  color: white;
-  background: green;
+}
+
+footer {
+  padding-top: 2%;
+  color: ghostwhite;
+  right: 0%;
+  text-align: center;
+  background-color: #666666;
+  font-family: "Yellowtail", cursive;
   box-sizing: border-box;
-  border-radius: 12px;
-  border: none;
-  padding: 3px 10px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-
-button.submit_btn:hover {
-  background: rgb(28, 168, 28);
-}
-
-h2 {
-  text-align: center;
-}
-
-form {
-  text-align: center;
+  padding-bottom: 0.5%;
 }
 
 ion-icon {
   font-size: 64px;
   color: white;
 }
-.text_utc {
-  font-size: 22px;
-  padding: 20px;
-  margin-bottom: 5px;
+
+/* Mobile Responsivness */
+
+@media screen and (max-width: 540px) {
+  .date_text {
+    font-size: 13px;
+  }
 }
-
-
-
-/* Mobile Responsiveness */
-
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 380px) {
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
-
-  form input {
-    margin-top: 10px;
-    width: 50%;
-    height: 40px;
-    border-radius: 4px;
+  .date_text {
+    font-size: 11px;
   }
-
-  .text_utc {
-    font-size: 18px;
-    padding: 20px;
-    margin-bottom: 5px;
+}
+@media screen and (max-width: 325px) {
+  h1 {
+    font-size: 19px;
+  }
+  .date_text {
+    font-size: 10px;
   }
 }
