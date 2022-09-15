@@ -8,7 +8,8 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
       <link rel="stylesheet" href="ltz.css"> 
   </head>
-  <body>
+  <body class="d-flex flex-column h-100">
+
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html">Navbar</a>
@@ -33,38 +34,32 @@
               </div>
             </div>
         </nav>
-        <div class="container-fluid p-5 bg-primary text-white text-center">
-            <h1>TimeConv - Timezone </h1>
-        </div>
-        <div class="container mt-5"></div>
-        <div class="row"></div>
-        <div class="container MT-5"></div>
-        <div class="row"></div>
-        <form id="lookuptimezonetime">
-            <div class="text_utc">In the first box enter language code for the country (example: en-us), 
-            second box enter timezone for the country (example: UTC) and for the third box enter 
-            the date (example: 6/23/2022 20:00:00) in your time.</div>
-            <input name="name" type="text" size="30">
-            <input name="name2" type="text" size="30">
-            <input name="name3" type="text" size="30">  
-            <button onclick="lookuptimezonetime()" class="submit_btn">Submit</button>  
-        </form>
-        <script>
-            function lookuptimezonetime() {
-              var x2, y2, a2, b2;
-              x2 = document.getElementById("lookuptimezonetime");
-              y2 = x2.elements["name"].value;
-              a2 = x2.elements["name2"].value;
-              b2 = x2.elements["name3"].value;
-              let datetime = new Date(b2);
-              document.getElementById("lookuptimezonetime").innerHTML = datetime.toLocaleString(y2, { timeZone: a2});
-            }   
-        </script> 
-    </div>
-  </div>
-</div>
-</div>
-        <footer>
+
+        <!--main content -->
+
+        <main class="flex-shrink-0">
+            <div class="container-fluid p-5 bg-primary text-white text-center">
+              <h1>TimeConv - Timezone </h1>
+          </div>
+          <div class="container">
+            <p class="text_utc">
+              In the first box enter language code for the country (example: en-us), 
+              second box enter timezone for the country (example: UTC) and for the third box enter 
+              the date (example: 6/23/2022 20:00:00) in your time.
+            </p>
+            <div>
+              <form id="lookuptimezonetime">
+                <input name="name" type="text" size="30" placeholder="en-US">
+                <input name="name2" type="text" size="30" placeholder="UTC">
+                <input name="name3" type="text" size="30" placeholder="6/23/2022 20:00:00)">  
+                <button onclick="lookuptimezonetime()" class="submit_btn">Submit</button>  
+            </form>
+            </div>
+          </div>
+        </main>
+
+        <!-- end of main-->
+        <footer class="footer mt-auto py-3 bg-secondary text-capitalize text-center text-white-50">
             <h2>Project Information</h2>
             <a href="https://github.com/ArjunSharda/TimeConv/" target="_blank">
               <ion-icon name="logo-github" size="large"></ion-icon>
@@ -73,6 +68,19 @@
               <ion-icon name="logo-discord" size="large"></ion-icon>
             </a>
         </footer>
+
+
+        <script>
+          function lookuptimezonetime() {
+            var x2, y2, a2, b2;
+            x2 = document.getElementById("lookuptimezonetime");
+            y2 = x2.elements["name"].value;
+            a2 = x2.elements["name2"].value;
+            b2 = x2.elements["name3"].value;
+            let datetime = new Date(b2);
+            document.getElementById("lookuptimezonetime").innerHTML = datetime.toLocaleString(y2, { timeZone: a2});
+          }   
+        </script> 
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
   </body>
