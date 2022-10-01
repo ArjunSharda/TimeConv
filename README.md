@@ -16,4 +16,6 @@ TimeConv has been created by [Arjun Sharda](https://github.com/ArjunSharda) and 
 
 
 ✋ Looking to contribute? Check out the [contributing guidelines](https://github.com/ArjunSharda/TimeConv/blob/main/CONTRIBUTING.md)
+<br>
 📖 Looking to learn from TimeConv? Check out the [LEARN.md](https://github.com/ArjunSharda/TimeConv/blob/main/LEARN.md)
+</br>
