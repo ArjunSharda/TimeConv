@@ -9,7 +9,7 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-    - uses: actions/first-interaction@v2
+    - uses: actions/first-interaction@v3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: "👋 Hey! Thanks for Contributing to TimeConv by raising this issue. \n \n # What will happen next? \n We will review your issue (collaborators and mantainer) and either close it or comment on it for a followup. \n \n ❓ Any questions? \n Don't hesitate to ask in this issue! \n \n Thanks, \n TimeConv Founders"
