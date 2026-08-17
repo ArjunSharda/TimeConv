@@ -41,16 +41,17 @@
       <div class="row">
       <form id="datetimetoutc">
             <span>Enter time: (example: 15 Jun 2020 5:30:00 CDT)</span>
-            <input name="name" type="text"> 
-            <button onclick="datetimetoutc();" class="submit_btn">Submit</button>  
+            <input name="name" type="text">
+            <button type="button" onclick="datetimetoutc();" class="submit_btn">Submit</button>
       </form>
+      <p id="datetimetoutc-result"></p>
       <script>
         function datetimetoutc() {
           var x,y;
           x = document.getElementById("datetimetoutc");
           y = x.elements["name"].value;
           let dateutdt = new Date(y);
-          document.getElementById("datetimetoutc").innerHTML = dateutdt.toUTCString();
+          document.getElementById("datetimetoutc-result").innerHTML = dateutdt.toUTCString();
         }
             
       </script>
