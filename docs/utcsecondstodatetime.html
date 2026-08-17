@@ -40,19 +40,20 @@
       <form id="utcsecondstodatetime">
         <span>Enter seconds (example: 1655864817):</span>
         <input name="name" type="text" size="30">
-        <button onclick="utcsecondstodatetime()" class="submit_btn">Submit</button>
+        <button type="button" onclick="utcsecondstodatetime()" class="submit_btn">Submit</button>
       </form>
+      <p id="utcsecondstodatetime-result"></p>
       <script>
         function utcsecondstodatetime() {
           var x2, y2;
           x2 = document.getElementById("utcsecondstodatetime");
           y2 = x2.elements["name"].value;
           if (!y2) {
-            document.getElementById("utcsecondstodatetime").innerHTML = "Invalid Date";
+            document.getElementById("utcsecondstodatetime-result").innerHTML = "Invalid Date";
           }
           else {
             const dateutdt2 = new Date(y2*1000);
-            document.getElementById("utcsecondstodatetime").innerHTML = dateutdt2.toLocaleString();
+            document.getElementById("utcsecondstodatetime-result").innerHTML = dateutdt2.toLocaleString();
           }
         }
       </script>
